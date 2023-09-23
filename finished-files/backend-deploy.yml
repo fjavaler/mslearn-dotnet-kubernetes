@@ -12,12 +12,12 @@ spec:
     spec:
       containers:
       - name: pizzabackend
-        image: [YOUR DOCKER USERNAME]]/pizzabackend:latest
-        ports:
-        - containerPort: 80
-        env:
-        - name: ASPNETCORE_URLS
-          value: http://*:80
+      image: fjavaler/pizzabackend:latest
+      ports:
+      - containerPort: 80
+      env:
+      - name: ASPNETCORE_URLS
+        value: http://*:80
   selector:
     matchLabels:
       app: pizzabackend
